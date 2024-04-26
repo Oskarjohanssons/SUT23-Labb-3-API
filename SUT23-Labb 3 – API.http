@@ -1,0 +1,6 @@
+@SUT23_Labb_3___API_HostAddress = http://localhost:5048
+
+GET {{SUT23_Labb_3___API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
