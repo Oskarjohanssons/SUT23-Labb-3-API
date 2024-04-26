@@ -5,8 +5,8 @@ namespace SUT23_Labb_3___API.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
-        { 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
 
         }
 
@@ -58,9 +58,9 @@ namespace SUT23_Labb_3___API.Data
 
 
             modelBuilder.Entity<Link>().HasData(new Link { LinkID = 10, Url = "www.youtube.com", PersonInterestID = 1 });
-            modelBuilder.Entity<Link>().HasData(new Link { LinkID = 11, Url = "www.stackoverflow.com", PersonInterestID = 1 });
-            modelBuilder.Entity<Link>().HasData(new Link { LinkID = 12, Url = "www.football.com", PersonInterestID = 2 });
-            modelBuilder.Entity<Link>().HasData(new Link { LinkID = 13, Url = "www.dancing.com", PersonInterestID = 2 });
+            modelBuilder.Entity<Link>().HasData(new Link { LinkID = 11, Url = "www.stackoverflow.com", PersonInterestID = 2 });
+            modelBuilder.Entity<Link>().HasData(new Link { LinkID = 12, Url = "www.football.com", PersonInterestID = 3 });
+            modelBuilder.Entity<Link>().HasData(new Link { LinkID = 13, Url = "www.dancing.com", PersonInterestID = 4 });
 
 
 
@@ -80,13 +80,13 @@ namespace SUT23_Labb_3___API.Data
             });
             modelBuilder.Entity<PersonInterest>().HasData(new PersonInterest
             {
-                PersonInterestID = 1,
+                PersonInterestID = 3,
                 PersonID = 2,
                 InterestID = 102,
             });
             modelBuilder.Entity<PersonInterest>().HasData(new PersonInterest
             {
-                PersonInterestID = 2,
+                PersonInterestID = 4,
                 PersonID = 4,
                 InterestID = 103,
             });

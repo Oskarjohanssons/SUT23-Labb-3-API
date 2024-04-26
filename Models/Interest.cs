@@ -9,6 +9,6 @@ namespace SUT23_Labb_3___API.Models
         public string Title { get; set; }
         public string Description { get; set; }
 
-        public ICollection<PersonInterest> PersonInterests { get; set; }
+        public ICollection<PersonInterest> PersonInterest { get; set; }
     }
 }

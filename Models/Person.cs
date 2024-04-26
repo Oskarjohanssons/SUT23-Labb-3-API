@@ -14,6 +14,6 @@ namespace SUT23_Labb_3___API.Models
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
 
-        public ICollection<PersonInterest> PersonInterests { get; set; }
+        public ICollection<PersonInterest> PersonInterest { get; set; }
     }
 }
