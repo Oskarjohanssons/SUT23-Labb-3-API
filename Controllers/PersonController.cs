@@ -15,7 +15,7 @@ namespace SUT23_Labb_3___API.Controllers
             _application = application;
         }
 
-        [HttpGet]
+        [HttpGet("GetAllPerson")]
         public async Task<ActionResult<Person>> GetAllPerson()
         {
             try
